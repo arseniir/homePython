@@ -1,0 +1,8 @@
+<h2>Enter username and email</h2>
+
+<form method="post" action="{% url 'members' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">Send data</button>
+</form>
